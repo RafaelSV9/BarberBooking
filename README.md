@@ -62,42 +62,34 @@ barberbooking-mvp/
 ## 🚀 Como Executar o Projeto
 
 ### 1️⃣ Subir o Banco de Dados
-```bash
+```
 docker compose up -d
 2️⃣ Rodar a API (.NET 8)
-bash
-Copiar código
+
 cd BarberBooking.Api
 cp .env.example .env
 Edite o arquivo .env e configure:
 
-env
-Copiar código
 ADMIN_USER=admin
 ADMIN_PASSWORD=senha_forte_aqui
 JWT_KEY=chave_super_secreta_com_32_chars_ou_mais
 Depois:
 
-bash
-Copiar código
 dotnet restore
 dotnet run
 Swagger disponível em:
 
-bash
-Copiar código
+
 http://localhost:5000/swagger
 3️⃣ Rodar o Front-end (Next.js)
-bash
 
-Copiar código
 cd barberbooking-web
 npm install
 cp .env.local.example .env.local
 npm run dev
 Aplicação:
 
-arduino
+
 http://localhost:3000
 ```
 🔑 Acesso Admin
